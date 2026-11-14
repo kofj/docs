@@ -20,7 +20,7 @@ WARNING:
 	[Tianon (of the Docker Project)](https://github.com/docker-library/docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
@@ -28,35 +28,45 @@ WARNING:
 
 ## Simple Tags
 
--	[`22.06.0-beta.0-cli`, `22.06-rc-cli`, `rc-cli`, `22.06.0-beta.0-cli-alpine3.16`](https://github.com/docker-library/docker/blob/fd4039323bbf96d9cf7b8f18a38c3b9b9a9e2189/22.06-rc/cli/Dockerfile)
--	[`22.06.0-beta.0-dind`, `22.06-rc-dind`, `rc-dind`, `22.06.0-beta.0-dind-alpine3.16`, `22.06.0-beta.0`, `22.06-rc`, `rc`, `22.06.0-beta.0-alpine3.16`](https://github.com/docker-library/docker/blob/1f37025ef2b9b70706d8e11cc3552830e4524758/22.06-rc/dind/Dockerfile)
--	[`22.06.0-beta.0-dind-rootless`, `22.06-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/1f37025ef2b9b70706d8e11cc3552830e4524758/22.06-rc/dind-rootless/Dockerfile)
--	[`22.06.0-beta.0-git`, `22.06-rc-git`, `rc-git`](https://github.com/docker-library/docker/blob/f23a2bea97f6d7ec563bc316302fb8edf620ec5b/22.06-rc/git/Dockerfile)
--	[`22.06.0-beta.0-windowsservercore-ltsc2022`, `22.06-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`22.06.0-beta.0-windowsservercore-1809`, `22.06-rc-windowsservercore-1809`, `rc-windowsservercore-1809`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-1809/Dockerfile)
--	[`20.10.17-cli`, `20.10-cli`, `20-cli`, `cli`, `20.10.17-cli-alpine3.16`, `20.10.17`, `20.10`, `20`, `latest`, `20.10.17-alpine3.16`](https://github.com/docker-library/docker/blob/8ddb44b5fbeb13cc6d0b810976460f50538fdafb/20.10/cli/Dockerfile)
--	[`20.10.17-dind`, `20.10-dind`, `20-dind`, `dind`, `20.10.17-dind-alpine3.16`](https://github.com/docker-library/docker/blob/1f37025ef2b9b70706d8e11cc3552830e4524758/20.10/dind/Dockerfile)
--	[`20.10.17-dind-rootless`, `20.10-dind-rootless`, `20-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/1f37025ef2b9b70706d8e11cc3552830e4524758/20.10/dind-rootless/Dockerfile)
--	[`20.10.17-git`, `20.10-git`, `20-git`, `git`](https://github.com/docker-library/docker/blob/f23a2bea97f6d7ec563bc316302fb8edf620ec5b/20.10/git/Dockerfile)
--	[`20.10.17-windowsservercore-ltsc2022`, `20.10-windowsservercore-ltsc2022`, `20-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/034e1d03eaf2c35ce4a21c4a4b621e2d2174b62e/20.10/windows/windowsservercore-ltsc2022/Dockerfile)
--	[`20.10.17-windowsservercore-1809`, `20.10-windowsservercore-1809`, `20-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/docker-library/docker/blob/034e1d03eaf2c35ce4a21c4a4b621e2d2174b62e/20.10/windows/windowsservercore-1809/Dockerfile)
+-	[`29.10.0-rc.2-cli`, `29-rc-cli`, `rc-cli`, `29.10.0-rc.2-cli-alpine3.24`](https://github.com/docker-library/docker/blob/30b1d9d9bafbef90a12e1bb6d56c2fbad309e905/29-rc/cli/Dockerfile)
+
+-	[`29.10.0-rc.2-dind`, `29-rc-dind`, `rc-dind`, `29.10.0-rc.2-dind-alpine3.24`, `29.10.0-rc.2`, `29-rc`, `rc`, `29.10.0-rc.2-alpine3.24`](https://github.com/docker-library/docker/blob/30b1d9d9bafbef90a12e1bb6d56c2fbad309e905/29-rc/dind/Dockerfile)
+
+-	[`29.10.0-rc.2-dind-rootless`, `29-rc-dind-rootless`, `rc-dind-rootless`](https://github.com/docker-library/docker/blob/30b1d9d9bafbef90a12e1bb6d56c2fbad309e905/29-rc/dind-rootless/Dockerfile)
+
+-	[`29.10.0-rc.2-windowsservercore-ltsc2025`, `29-rc-windowsservercore-ltsc2025`, `rc-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/30b1d9d9bafbef90a12e1bb6d56c2fbad309e905/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+
+-	[`29.10.0-rc.2-windowsservercore-ltsc2022`, `29-rc-windowsservercore-ltsc2022`, `rc-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/30b1d9d9bafbef90a12e1bb6d56c2fbad309e905/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+
+-	[`29.9.3-cli`, `29.9-cli`, `29-cli`, `cli`, `29.9.3-cli-alpine3.24`](https://github.com/docker-library/docker/blob/bd854126607fe24e775a4a4b9cb30243b74c3a36/29/cli/Dockerfile)
+
+-	[`29.9.3-dind`, `29.9-dind`, `29-dind`, `dind`, `29.9.3-dind-alpine3.24`, `29.9.3`, `29.9`, `29`, `latest`, `29.9.3-alpine3.24`](https://github.com/docker-library/docker/blob/3e782bbabff3af541d2699cf62bd25ec12d3feb6/29/dind/Dockerfile)
+
+-	[`29.9.3-dind-rootless`, `29.9-dind-rootless`, `29-dind-rootless`, `dind-rootless`](https://github.com/docker-library/docker/blob/3e782bbabff3af541d2699cf62bd25ec12d3feb6/29/dind-rootless/Dockerfile)
+
+-	[`29.9.3-windowsservercore-ltsc2025`, `29.9-windowsservercore-ltsc2025`, `29-windowsservercore-ltsc2025`, `windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/bd854126607fe24e775a4a4b9cb30243b74c3a36/29/windows/windowsservercore-ltsc2025/Dockerfile)
+
+-	[`29.9.3-windowsservercore-ltsc2022`, `29.9-windowsservercore-ltsc2022`, `29-windowsservercore-ltsc2022`, `windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/bd854126607fe24e775a4a4b9cb30243b74c3a36/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 ## Shared Tags
 
--	`22.06.0-beta.0-windowsservercore`, `22.06-rc-windowsservercore`, `rc-windowsservercore`:
-	-	[`22.06.0-beta.0-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`22.06.0-beta.0-windowsservercore-1809`](https://github.com/docker-library/docker/blob/4c1b73e7046422ca1339b76935c2e2f4251b9c20/22.06-rc/windows/windowsservercore-1809/Dockerfile)
--	`20.10.17-windowsservercore`, `20.10-windowsservercore`, `20-windowsservercore`, `windowsservercore`:
-	-	[`20.10.17-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/034e1d03eaf2c35ce4a21c4a4b621e2d2174b62e/20.10/windows/windowsservercore-ltsc2022/Dockerfile)
-	-	[`20.10.17-windowsservercore-1809`](https://github.com/docker-library/docker/blob/034e1d03eaf2c35ce4a21c4a4b621e2d2174b62e/20.10/windows/windowsservercore-1809/Dockerfile)
+-	`29.10.0-rc.2-windowsservercore`, `29-rc-windowsservercore`, `rc-windowsservercore`:
+
+	-	[`29.10.0-rc.2-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/30b1d9d9bafbef90a12e1bb6d56c2fbad309e905/29-rc/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`29.10.0-rc.2-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/30b1d9d9bafbef90a12e1bb6d56c2fbad309e905/29-rc/windows/windowsservercore-ltsc2022/Dockerfile)
+
+-	`29.9.3-windowsservercore`, `29.9-windowsservercore`, `29-windowsservercore`, `windowsservercore`:
+
+	-	[`29.9.3-windowsservercore-ltsc2025`](https://github.com/docker-library/docker/blob/bd854126607fe24e775a4a4b9cb30243b74c3a36/29/windows/windowsservercore-ltsc2025/Dockerfile)
+	-	[`29.9.3-windowsservercore-ltsc2022`](https://github.com/docker-library/docker/blob/bd854126607fe24e775a4a4b9cb30243b74c3a36/29/windows/windowsservercore-ltsc2022/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues)
+	[https://github.com/docker-library/docker/issues](https://github.com/docker-library/docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
+	[`amd64`](https://hub.docker.com/r/amd64/docker/), [`arm32v6`](https://hub.docker.com/r/arm32v6/docker/), [`arm32v7`](https://hub.docker.com/r/arm32v7/docker/), [`arm64v8`](https://hub.docker.com/r/arm64v8/docker/), [`ppc64le`](https://hub.docker.com/r/ppc64le/docker/), [`s390x`](https://hub.docker.com/r/s390x/docker/), [`windows-amd64`](https://hub.docker.com/r/winamd64/docker/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/docker/` directory](https://github.com/docker-library/repo-info/blob/master/repos/docker) ([history](https://github.com/docker-library/repo-info/commits/master/repos/docker))  
@@ -276,31 +286,12 @@ $ docker run --privileged --name some-docker -d \
 
 Some of these will not be supported based on the settings on the host's `dockerd`, such as `--ulimit nofile=-1`, giving errors that look like `error setting rlimit type 7: operation not permitted`, and some may inherit sane values from the host `dockerd` instance or may not apply for your usage of Docker-in-Docker (for example, you likely want to set `--oom-score-adj` to a value that's higher than `dockerd` on the host so that your Docker-in-Docker instance is killed before the host Docker instance is).
 
-## Rootless
-
-For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
-
-**Note:** just like the regular `dind` images, `--privileged` is required for Docker-in-Docker to function properly ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015)). For `19.03.x` rootless images, an argument of `--experimental` is required for `dockerd` ([docker/docker#40759](https://github.com/docker/docker/pull/40759)).
-
-Basic example usage:
-
-```console
-$ docker run -d --name some-docker --privileged docker:dind-rootless
-$ docker logs --tail=3 some-docker # to verify the daemon has finished generating TLS certificates and is listening successfully
-time="xxx" level=info msg="Daemon has completed initialization"
-time="xxx" level=info msg="API listen on /run/user/1000/docker.sock"
-time="xxx" level=info msg="API listen on [::]:2376"
-$ docker exec -it some-docker docker-entrypoint.sh sh # using "docker-entrypoint.sh" which auto-sets "DOCKER_HOST" appropriately
-/ $ docker info --format '{{ json .SecurityOptions }}'
-["name=seccomp,profile=default","name=rootless"]
-```
-
 ## Where to Store Data
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `docker` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your data [by writing to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your data [by writing to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -317,9 +308,49 @@ The `-v /my/own/var-lib-docker:/var/lib/docker` part of the command mounts the `
 
 The `docker` images come in many flavors, each designed for a specific use case.
 
-## `docker:<version>`
+**Note:** The `docker:stable`, `docker:test`, and related "channel" tags have been deprecated since June 2020 (see [docker-library/docker#179](https://github.com/docker-library/docker/pull/179)) and have not been updated since December 2020 (when Docker 20.10 was released). Suggested alternatives are below. `X` is a placeholder for the version; see the supported tags list for the current set of tags.
 
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
+-	`docker:stable` ⏩ `docker:latest`, `docker:dind`, `docker:X`, `docker:cli`, etc
+-	`docker:test` ⏩ `docker:rc`, `docker:rc-dind`, `docker:X-rc`, `docker:rc-cli`, etc (only updated when there is an active pre-release; will not point to the same thing as `latest`)
+
+## `docker:<version>-cli`
+
+This image contains the Docker client command line interface (CLI) and Docker CLI plugins like `buildx` and `compose`. This is useful if you need to interact with a remote Docker engine but aren't planning to run the Docker engine in the container.
+
+## `docker:<version>`, `docker:<version>-dind`
+
+The default variant is the Docker in Docker variant. It contains the Docker engine as well as the Docker CLI and plugins that are included in the `cli` variant. It is useful for running Docker in Docker and for interacting with a Docker engine via the Docker CLI.
+
+## `docker:<version>-rootless`
+
+For more information about using the experimental "rootless" image variants, see [docker-library/docker#174](https://github.com/docker-library/docker/pull/174).
+
+**Note:** just like the regular `dind` images, `--privileged` is required for Docker-in-Docker to function properly ([docker-library/docker#151](https://github.com/docker-library/docker/issues/151#issuecomment-483185972) & [docker-library/docker#281](https://github.com/docker-library/docker/issues/281#issuecomment-744766015)), which is a security issue that needs to be treated appropriately.
+
+Basic example usage:
+
+```console
+$ docker run -d --name some-docker --privileged docker:dind-rootless
+$ docker logs --tail=3 some-docker # to verify the daemon has finished generating TLS certificates and is listening successfully
+time="xxx" level=info msg="Daemon has completed initialization"
+time="xxx" level=info msg="API listen on /run/user/1000/docker.sock"
+time="xxx" level=info msg="API listen on [::]:2376"
+$ docker exec -it some-docker docker-entrypoint.sh sh # using "docker-entrypoint.sh" which auto-sets "DOCKER_HOST" appropriately
+/ $ docker info --format '{{ json .SecurityOptions }}'
+["name=seccomp,profile=default","name=rootless"]
+```
+
+To run with a different UID/GID than the one baked into the image, modify `/etc/passwd`, `/etc/group`, and filesystem permissions (especially for the `rootless` user's home directory) as appropriate; for example:
+
+```dockerfile
+FROM docker:dind-rootless
+USER root
+RUN set -eux; \
+	sed -i -e 's/^rootless:x:1000:1000:/rootless:x:1234:5678:/' /etc/passwd; \
+	sed -i -e 's/^rootless:x:1000:/rootless:x:5678:/' /etc/group; \
+	chown -R rootless ~rootless
+USER rootless
+```
 
 ## `docker:<version>-windowsservercore`
 

@@ -17,30 +17,56 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[the Docker Community](https://github.com/docker-library/redis)
+	[Redis LTD](https://redis.io/)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.0.4`, `7.0`, `7`, `latest`, `7.0.4-bullseye`, `7.0-bullseye`, `7-bullseye`, `bullseye`](https://github.com/docker-library/redis/blob/5c0bbb5dfce3d4999649cbc3ba8bf7c123bcadff/7.0/Dockerfile)
--	[`7.0.4-alpine`, `7.0-alpine`, `7-alpine`, `alpine`, `7.0.4-alpine3.16`, `7.0-alpine3.16`, `7-alpine3.16`, `alpine3.16`](https://github.com/docker-library/redis/blob/5c0bbb5dfce3d4999649cbc3ba8bf7c123bcadff/7.0/alpine/Dockerfile)
--	[`6.2.7`, `6.2`, `6`, `6.2.7-bullseye`, `6.2-bullseye`, `6-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/6.2/Dockerfile)
--	[`6.2.7-alpine`, `6.2-alpine`, `6-alpine`, `6.2.7-alpine3.16`, `6.2-alpine3.16`, `6-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/6.2/alpine/Dockerfile)
--	[`6.0.16`, `6.0`, `6.0.16-bullseye`, `6.0-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/6.0/Dockerfile)
--	[`6.0.16-alpine`, `6.0-alpine`, `6.0.16-alpine3.16`, `6.0-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/6.0/alpine/Dockerfile)
--	[`5.0.14`, `5.0`, `5`, `5.0.14-bullseye`, `5.0-bullseye`, `5-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/5/Dockerfile)
--	[`5.0.14-32bit`, `5.0-32bit`, `5-32bit`, `5.0.14-32bit-bullseye`, `5.0-32bit-bullseye`, `5-32bit-bullseye`](https://github.com/docker-library/redis/blob/0f2bb676ab5153905089537230a732a77d26e438/5/32bit/Dockerfile)
--	[`5.0.14-alpine`, `5.0-alpine`, `5-alpine`, `5.0.14-alpine3.16`, `5.0-alpine3.16`, `5-alpine3.16`](https://github.com/docker-library/redis/blob/d36a031654f52ab95601de1f8a841765177cf702/5/alpine/Dockerfile)
+-	[`8.12-rc3`, `8.12-rc3-trixie`](https://github.com/redis/docker-library-redis/blob/5bca56cf1973c2df353564ee7f5038fd5bc27c09/debian/Dockerfile)
+
+-	[`8.12-rc3-alpine`, `8.12-rc3-alpine3.23`](https://github.com/redis/docker-library-redis/blob/5bca56cf1973c2df353564ee7f5038fd5bc27c09/alpine/Dockerfile)
+
+-	[`8.10.3`, `8.10`, `8`, `8.10.3-trixie`, `8.10-trixie`, `8-trixie`, `latest`, `trixie`](https://github.com/redis/docker-library-redis/blob/8fd1238a62e5a6090d826e6d5fc53de6ce5f8a82/debian/Dockerfile)
+
+-	[`8.10.3-alpine`, `8.10-alpine`, `8-alpine`, `8.10.3-alpine3.23`, `8.10-alpine3.23`, `8-alpine3.23`, `alpine`, `alpine3.23`](https://github.com/redis/docker-library-redis/blob/8fd1238a62e5a6090d826e6d5fc53de6ce5f8a82/alpine/Dockerfile)
+
+-	[`8.8.4`, `8.8`, `8.8.4-trixie`, `8.8-trixie`](https://github.com/redis/docker-library-redis/blob/2719f9251bcf23b0dca8e043d566fe0b1188e02f/debian/Dockerfile)
+
+-	[`8.8.4-alpine`, `8.8-alpine`, `8.8.4-alpine3.23`, `8.8-alpine3.23`](https://github.com/redis/docker-library-redis/blob/2719f9251bcf23b0dca8e043d566fe0b1188e02f/alpine/Dockerfile)
+
+-	[`8.6.8`, `8.6`, `8.6.8-trixie`, `8.6-trixie`](https://github.com/redis/docker-library-redis/blob/ed4d6d8916de1896189be3b45569c7abc3c47525/debian/Dockerfile)
+
+-	[`8.6.8-alpine`, `8.6-alpine`, `8.6.8-alpine3.23`, `8.6-alpine3.23`](https://github.com/redis/docker-library-redis/blob/ed4d6d8916de1896189be3b45569c7abc3c47525/alpine/Dockerfile)
+
+-	[`8.4.8`, `8.4`, `8.4.8-trixie`, `8.4-trixie`](https://github.com/redis/docker-library-redis/blob/e94aa08a9e3b50a1bd7fd44768dbac9c79a56ead/debian/Dockerfile)
+
+-	[`8.4.8-alpine`, `8.4-alpine`, `8.4.8-alpine3.22`, `8.4-alpine3.22`, `8-alpine3.22`, `alpine3.22`](https://github.com/redis/docker-library-redis/blob/e94aa08a9e3b50a1bd7fd44768dbac9c79a56ead/alpine/Dockerfile)
+
+-	[`8.2.11`, `8.2`, `8.2.11-bookworm`, `8.2-bookworm`, `8-bookworm`, `bookworm`](https://github.com/redis/docker-library-redis/blob/ffe34ace97d06343e05e3f39eb8a43f829dded24/debian/Dockerfile)
+
+-	[`8.2.11-alpine`, `8.2-alpine`, `8.2.11-alpine3.22`, `8.2-alpine3.22`](https://github.com/redis/docker-library-redis/blob/ffe34ace97d06343e05e3f39eb8a43f829dded24/alpine/Dockerfile)
+
+-	[`7.4.12`, `7.4`, `7`, `7.4.12-bookworm`, `7.4-bookworm`, `7-bookworm`](https://github.com/redis/docker-library-redis/blob/346d38e447b5f2266de15081b60f952448c93594/debian/Dockerfile)
+
+-	[`7.4.12-alpine`, `7.4-alpine`, `7-alpine`, `7.4.12-alpine3.22`, `7.4-alpine3.22`, `7-alpine3.22`](https://github.com/redis/docker-library-redis/blob/346d38e447b5f2266de15081b60f952448c93594/alpine/Dockerfile)
+
+-	[`7.2.17`, `7.2`, `7.2.17-bookworm`, `7.2-bookworm`](https://github.com/redis/docker-library-redis/blob/f40d1b25dbd4ab13868e764644d5e7298b3440c8/debian/Dockerfile)
+
+-	[`7.2.17-alpine`, `7.2-alpine`, `7.2.17-alpine3.22`, `7.2-alpine3.22`](https://github.com/redis/docker-library-redis/blob/f40d1b25dbd4ab13868e764644d5e7298b3440c8/alpine/Dockerfile)
+
+-	[`6.2.24`, `6.2`, `6`, `6.2.24-bookworm`, `6.2-bookworm`, `6-bookworm`](https://github.com/redis/docker-library-redis/blob/d7e6fa4aed5f32798da5fbb59fc5028bdeaec137/debian/Dockerfile)
+
+-	[`6.2.24-alpine`, `6.2-alpine`, `6-alpine`, `6.2.24-alpine3.22`, `6.2-alpine3.22`, `6-alpine3.22`](https://github.com/redis/docker-library-redis/blob/d7e6fa4aed5f32798da5fbb59fc5028bdeaec137/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/redis/issues](https://github.com/docker-library/redis/issues)
+	[https://github.com/redis/docker-library-redis/issues](https://github.com/redis/docker-library-redis/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`mips64le`](https://hub.docker.com/r/mips64le/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)
+	[`amd64`](https://hub.docker.com/r/amd64/redis/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redis/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redis/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redis/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redis/), [`i386`](https://hub.docker.com/r/i386/redis/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redis/), [`riscv64`](https://hub.docker.com/r/riscv64/redis/), [`s390x`](https://hub.docker.com/r/s390x/redis/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redis/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redis) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redis))  
@@ -55,29 +81,35 @@ WARNING:
 
 # What is Redis?
 
-Redis is an open-source, networked, in-memory, key-value data store with optional durability. It is written in ANSI C. The development of Redis is sponsored by Redis Labs today; before that, it was sponsored by Pivotal and VMware. According to the monthly ranking by DB-Engines.com, Redis is the most popular key-value store. The name Redis means REmote DIctionary Server.
+Redis is the world’s fastest data platform. It provides cloud and on-prem solutions for caching, vector search, and NoSQL databases that seamlessly fit into any tech stack&mdash;making it simple for digital customers to build, scale, and deploy the fast apps our world runs on.
 
-> [wikipedia.org/wiki/Redis](https://en.wikipedia.org/wiki/Redis)
+> [redis.io](https://redis.io)
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/01c12653951b2fe592c1f93a13b4e289ada0e3a1/redis/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/0e42ee108b46e1ba6333e9eb44201b8f26c4032d/redis/logo.png)
 
 # Security
 
 For the ease of accessing Redis from other containers via Docker networking, the "Protected mode" is turned off by default. This means that if you expose the port outside of your host (e.g., via `-p` on `docker run`), it will be open without a password to anyone. It is **highly** recommended to set a password (by supplying a config file) if you plan on exposing your Redis instance to the internet. For further information, see the following links about Redis security:
 
--	[Redis documentation on security](https://redis.io/topics/security)
--	[Protected mode](https://redis.io/topics/security#protected-mode)
+-	[Redis documentation on security](https://redis.io/docs/latest/operate/oss_and_stack/management/security/)
+-	[Protected mode](https://redis.io/docs/latest/operate/oss_and_stack/management/security/#protected-mode)
 -	[A few things about Redis security by antirez](http://antirez.com/news/96)
+
+## Process User and Privileges
+
+By default, the Redis Docker image drops privileges by switching to the redis user and removing unnecessary capabilities. This step is skipped if Docker is run with the `--user` option or if you set the `SKIP_DROP_PRIVS=1` (since 8.0.2) environment variable.
+
+Note: Using `SKIP_DROP_PRIVS` is not recommended, as it reduces the container's security.
 
 # How to use this image
 
-## start a redis instance
+## Start a redis instance
 
 ```console
 $ docker run --name some-redis -d redis
 ```
 
-## start with persistent storage
+## Start with persistent storage
 
 ```console
 $ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warning
@@ -85,15 +117,29 @@ $ docker run --name some-redis -d redis redis-server --save 60 1 --loglevel warn
 
 There are several different persistence strategies to choose from. This one will save a snapshot of the DB every 60 seconds if at least 1 write operation was performed (it will also lead to more logs, so the `loglevel` option may be desirable). If persistence is enabled, data is stored in the `VOLUME /data`, which can be used with `--volumes-from some-volume-container` or `-v /docker/host/dir:/data` (see [docs.docker volumes](https://docs.docker.com/engine/tutorials/dockervolumes/)).
 
-For more about Redis Persistence, see [http://redis.io/topics/persistence](http://redis.io/topics/persistence).
+For more about Redis persistence, see [the official Redis documentation](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/).
 
-## connecting via `redis-cli`
+### File and Directory Permissions
+
+Redis will attempt to correct the ownership and permissions of the data and configuration (since 8.0.2) directories and files if they are not set correctly. This adjustment is only performed in basic, default scenarios to avoid interfering with custom or user-specific configurations.
+
+You can skip this step by setting the `SKIP_FIX_PERMS=1`(since 8.0.2) environment variable.
+
+### Manually Setting File and Directory Permissions
+
+If you prefer to handle file permissions yourself, you can use a `docker run` command to set the correct ownership on mounted volumes. For example:
+
+```console
+$ docker run --rm -v /your/host/path:/data redis chown -R redis:redis /data
+```
+
+## Connecting via `redis-cli`
 
 ```console
 $ docker run -it --network some-network --rm redis redis-cli -h some-redis
 ```
 
-## Additionally, If you want to use your own redis.conf ...
+## Additionally, if you want to use your own redis.conf ...
 
 You can create your own Dockerfile that adds a redis.conf from the context into /data/, like so.
 
@@ -113,17 +159,15 @@ Where `/myredis/conf/` is a local directory containing your `redis.conf` file. U
 
 The mapped directory should be writable, as depending on the configuration and mode of operation, Redis may need to create additional configuration files or rewrite existing ones.
 
-## `32bit` variant
+### CONFIG REWRITE behavior
 
-This variant is *not* a 32bit image (and will not run on 32bit hardware), but includes Redis compiled as a 32bit binary, especially for users who need the decreased memory requirements associated with that. See ["Using 32 bit instances"](http://redis.io/topics/memory-optimization#using-32-bit-instances) in the Redis documentation for more information.
+Starting with image version 8.12-rc2, pass `--config-rewrite-source-aware yes` directly to `redis-server` to prevent `CONFIG REWRITE` from copying command-line settings and unchanged settings from included files into the main `redis.conf`. In particular, this prevents [duplicate module loading on restart](https://github.com/redis/redis/issues/14178).
 
-# Redis Modules
+```console
+$ docker run -v /myredis/conf:/usr/local/etc/redis --name myredis redis:8.12-rc2 redis-server /usr/local/etc/redis/redis.conf --config-rewrite-source-aware yes
+```
 
-You can find the list of modules for Redis on [redis.io](https://redis.io/modules) or on [redismodules.com](http://redismodules.com). A few of the standard modules can be found here:
-
--	[RediSearch](https://hub.docker.com/r/redislabs/redisearch/): Search and Query with Indexing on Redis
--	[ReJSON](https://hub.docker.com/r/redislabs/rejson/): Extended JSON processing for Redis
--	[ReBloom](https://hub.docker.com/r/redislabs/rebloom/): Bloom Filters data type for membership/existence search on Redis
+Redis’s [`config-rewrite-source-aware`](https://github.com/redis/redis/pull/16009) option is experimental. This behavior is expected to become the default in the next major release.
 
 # Image Variants
 
@@ -133,7 +177,7 @@ The `redis` images come in many flavors, each designed for a specific use case.
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redis:<version>-alpine`
 
@@ -145,7 +189,9 @@ To minimize image size, it's uncommon for additional related tools (such as `git
 
 # License
 
-View [license information](http://redis.io/topics/license) for the software contained in this image.
+Starting with Redis 8.0, Redis follows a tri-licensing model with the choice of the [Redis Source Available License v2 - RSALv2](https://redis.io/legal/rsalv2-agreement/), [Server Side Public License v1 - SSPLv1](https://redis.io/legal/server-side-public-license-sspl/), or the [GNU Affero General Public License v3 - AGPLv3](https://opensource.org/license/agpl-v3). Prior versions of Redis (<=7.2.4) are licensed under [3-Clause BSD](https://opensource.org/license/bsd-3-clause)⁠, and Redis 7.4.x-7.8.x are licensed under the dual [RSALv2](https://redis.io/legal/rsalv2-agreement/) or [SSPLv1](https://redis.io/legal/server-side-public-license-sspl/) license.
+
+Please also view the [Redis License Overview](https://redis.io/legal/licenses/) and the [Redis Trademark Policy](https://redis.io/legal/trademark-policy/).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

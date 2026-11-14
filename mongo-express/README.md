@@ -14,26 +14,29 @@ WARNING:
 
 -->
 
+# **DEPRECATION NOTICE**
+
+This image is deprecated due to maintainer inactivity (last updated Apr 2024; [docker-library/official-images#16597](https://github.com/docker-library/official-images/pull/16597)).
+
 # Quick reference
 
 -	**Maintained by**:  
 	[mongo-express](https://github.com/mongo-express/mongo-express-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.0.0-alpha.4`, `1.0.0-alpha`, `latest`](https://github.com/mongo-express/mongo-express-docker/blob/26e7ea94e4d222de7d52531caee52149ac093c26/Dockerfile)
--	[`0.54.0`, `0.54`](https://github.com/mongo-express/mongo-express-docker/blob/4b43fe8a1206434cb32a006cd155dd71462f092f/Dockerfile)
+**No supported tags**
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues)
+	[https://github.com/mongo-express/mongo-express-docker/issues](https://github.com/mongo-express/mongo-express-docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/mongo-express/), [`arm64v8`](https://hub.docker.com/r/arm64v8/mongo-express/)
+	**No supported architectures**
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/mongo-express/` directory](https://github.com/docker-library/repo-info/blob/master/repos/mongo-express) ([history](https://github.com/docker-library/repo-info/commits/master/repos/mongo-express))  
@@ -112,7 +115,7 @@ $ docker run -it --rm \
     mongo-express
 ```
 
-This example links to a container name typical of `docker-compose`, changes the editor's color theme, and enables basic authentication.
+This example links to a container name typical of `docker compose`, changes the editor's color theme, and enables basic authentication.
 
 # License
 

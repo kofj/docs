@@ -20,18 +20,20 @@ WARNING:
 	[VMware](https://github.com/vmware/photon-docker-image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0`, `4.0-20220805`, `latest`](https://github.com/vmware/photon-docker-image/blob/556b935caf58c6d84bf8e1a7df7a9cff4e96e9cd/docker/Dockerfile)
--	[`3.0`, `3.0-20220805`](https://github.com/vmware/photon-docker-image/blob/b61ce6d6c42b27c1747abfb4b93d4fad58757d3b/docker/Dockerfile)
--	[`2.0`, `2.0-20220805`](https://github.com/vmware/photon-docker-image/blob/003cd520d828fe87ea98b48e357bef98da89cee9/docker/Dockerfile)
+-	[`5.0`, `5.0-20261022`, `latest`](https://github.com/vmware/photon-docker-image/blob/89b5a8247abd8dee50a411cfb319909500945357/docker/Dockerfile)
+
+-	[`4.0`, `4.0-20261108`](https://github.com/vmware/photon-docker-image/blob/b9e3adbfe48e610dc65f3c801f62760aaf3a25fe/docker/Dockerfile)
+
+-	[`3.0`, `3.0-20250316`](https://github.com/vmware/photon-docker-image/blob/f848d5df815c0afe76b42a608d49df0e87af51c2/docker/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues)
+	[https://github.com/vmware/photon-docker-image/issues](https://github.com/vmware/photon-docker-image/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/photon/), [`arm64v8`](https://hub.docker.com/r/arm64v8/photon/)
@@ -59,7 +61,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon OS 5.0 as the base of an image, specify `FROM photon:5.0`.
 
 ## Support
 
@@ -73,7 +75,7 @@ For more general user questions, visit the Photon OS user forum in our [Photon O
 
 # License
 
-View [license information](https://github.com/vmware/photon/blob/master/LICENSE) for the software contained in this image.
+View [license information](https://github.com/vmware/photon/blob/5.0/LICENSE.md) for the software contained in this image.
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

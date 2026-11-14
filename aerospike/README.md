@@ -17,23 +17,24 @@ WARNING:
 # Quick reference
 
 -	**Maintained by**:  
-	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server-enterprise.docker)
+	[Aerospike, Inc.](https://github.com/aerospike/aerospike-server.docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`ee-6.0.0.2`](https://github.com/aerospike/aerospike-server-enterprise.docker/blob/15c5e9532b8ad0b57ebf3ef046de779deb2b31e9/Dockerfile)
--	[`ce-6.0.0.2`](https://github.com/aerospike/aerospike-server.docker/blob/27f69aa11a554d3521d735f2d53c87c858b2ba8b/Dockerfile)
+-	[`ee-8.2.0.1`, `ee-8.2.0.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/64eb199cbc7bf7c7847da40d74afeb6a82827087/releases/8.2/enterprise/ubuntu24.04/Dockerfile)
+
+-	[`ce-8.2.0.1`, `ce-8.2.0.1_1`](https://github.com/aerospike/aerospike-server.docker/blob/64eb199cbc7bf7c7847da40d74afeb6a82827087/releases/8.2/community/ubuntu24.04/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server-enterprise.docker/issues)
+	[the Aerospike Forums](https://discuss.aerospike.com) or [GitHub](https://github.com/aerospike/aerospike-server.docker/issues)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/aerospike/)
+	[`amd64`](https://hub.docker.com/r/amd64/aerospike/), [`arm64v8`](https://hub.docker.com/r/arm64v8/aerospike/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/aerospike/` directory](https://github.com/docker-library/repo-info/blob/master/repos/aerospike) ([history](https://github.com/docker-library/repo-info/commits/master/repos/aerospike))  
@@ -52,7 +53,7 @@ WARNING:
 
 [Aerospike](http://aerospike.com) is a distributed NoSQL database purposefully designed for high performance web scale applications. Aerospike supports key-value and document data models, and has multiple data types including List, Map, HyperLogLog, GeoJSON, and Blob. Aerospike's patented hybrid memory architecture delivers predictable high performance at scale and high data density per node.
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/9944063c59872460e15f6ecb19c1419c8124752f/aerospike/logo.png)
+![logo](https://raw.githubusercontent.com/docker-library/docs/42ae663b4b922326e5c55c7c513c8d04a11f9aaf/aerospike/logo.png)
 
 ## Getting Started
 
@@ -70,7 +71,7 @@ docker run -d -v DIR:/opt/aerospike/etc/ -e "FEATURE_KEY_FILE=/opt/aerospike/etc
 
 Above, *DIR* is a directory on your machine where you drop your feature key file. Make sure Docker Desktop has file sharing permission to bind mount it into Docker containers.
 
-### Running an Aerospike EE node with a feature key file in a mapped directory
+### Running a node with a feature key file in an environment variable
 
 ```console
 FEATKEY=$(base64 ~/Desktop/evaluation-features.conf)
@@ -131,7 +132,7 @@ You should first `-v` map a local directory, which Docker will bind mount. Next,
 For example:
 
 ```console
-docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike-p 3000-3002:3000-3002 aerospike:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
+docker run -d -v /opt/aerospike/etc/:/opt/aerospike/etc/ --name aerospike -p 3000-3002:3000-3002 aerospike:ee-[version] --config-file /opt/aerospike/etc/aerospike.conf
 ```
 
 ### Persistent Data Directory
@@ -217,7 +218,7 @@ For more, see [How do I get a 2 nodes Aerospike cluster running quickly in Docke
 
 ## Image Versions
 
-These images are based on [debian:strech-slim](https://hub.docker.com/_/debian).
+These images are based on [ubuntu:24.04](https://hub.docker.com/_/ubuntu).
 
 ### ee-[version]
 

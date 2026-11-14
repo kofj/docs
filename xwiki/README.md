@@ -20,24 +20,38 @@ WARNING:
 	[the XWiki Community](https://github.com/xwiki-contrib/docker-xwiki)
 
 -	**Where to get help**:  
-	[the XWiki Users Mailing List/Forum](http://dev.xwiki.org/xwiki/bin/view/Community/MailingLists) or [the XWiki IRC channel](http://dev.xwiki.org/xwiki/bin/view/Community/IRC)
+	[the XWiki Forum](https://dev.xwiki.org/xwiki/bin/view/Community/Discuss) or [the XWiki Chat](https://dev.xwiki.org/xwiki/bin/view/Community/Chat)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`14`, `14.6`, `14.6.0`, `14-mysql-tomcat`, `14.6-mysql-tomcat`, `14.6.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki-contrib/docker-xwiki/blob/da38c291b3e953a4c94cfe25a2e2c6e0ffd4c7e8/14/mysql-tomcat/Dockerfile)
--	[`14-postgres-tomcat`, `14.6-postgres-tomcat`, `14.6.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/da38c291b3e953a4c94cfe25a2e2c6e0ffd4c7e8/14/postgres-tomcat/Dockerfile)
--	[`14-mariadb-tomcat`, `14.6-mariadb-tomcat`, `14.6.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/da38c291b3e953a4c94cfe25a2e2c6e0ffd4c7e8/14/mariadb-tomcat/Dockerfile)
--	[`14.4`, `14.4.2`, `14.4-mysql-tomcat`, `14.4.3-mysql-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/91946e6b5c163add710beae93305b0785df2d9bc/14.4/mysql-tomcat/Dockerfile)
--	[`14.4-postgres-tomcat`, `14.4.3-postgres-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/91946e6b5c163add710beae93305b0785df2d9bc/14.4/postgres-tomcat/Dockerfile)
--	[`14.4-mariadb-tomcat`, `14.4.3-mariadb-tomcat`](https://github.com/xwiki-contrib/docker-xwiki/blob/91946e6b5c163add710beae93305b0785df2d9bc/14.4/mariadb-tomcat/Dockerfile)
--	[`13`, `13.10`, `13.10.8`, `13-mysql-tomcat`, `13.10-mysql-tomcat`, `13.10.8-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki-contrib/docker-xwiki/blob/82e901c6cbea5749dc7ad7a22df7df9366e1cee4/13/mysql-tomcat/Dockerfile)
--	[`13-postgres-tomcat`, `13.10-postgres-tomcat`, `13.10.8-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki-contrib/docker-xwiki/blob/82e901c6cbea5749dc7ad7a22df7df9366e1cee4/13/postgres-tomcat/Dockerfile)
--	[`13-mariadb-tomcat`, `13.10-mariadb-tomcat`, `13.10.8-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki-contrib/docker-xwiki/blob/82e901c6cbea5749dc7ad7a22df7df9366e1cee4/13/mariadb-tomcat/Dockerfile)
+-	[`18`, `18.9`, `18.9.0`, `18-mysql-tomcat`, `18.9-mysql-tomcat`, `18.9.0-mysql-tomcat`, `mysql-tomcat`, `stable-mysql-tomcat`, `stable-mysql`, `stable`, `latest`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/18/mysql-tomcat/Dockerfile)
+
+-	[`18-postgres-tomcat`, `18.9-postgres-tomcat`, `18.9.0-postgres-tomcat`, `postgres-tomcat`, `stable-postgres-tomcat`, `stable-postgres`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/18/postgres-tomcat/Dockerfile)
+
+-	[`18-mariadb-tomcat`, `18.9-mariadb-tomcat`, `18.9.0-mariadb-tomcat`, `mariadb-tomcat`, `stable-mariadb-tomcat`, `stable-mariadb`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/18/mariadb-tomcat/Dockerfile)
+
+-	[`18.4`, `18.4.8`, `18.4-mysql-tomcat`, `18.4.8-mysql-tomcat`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/18.4/mysql-tomcat/Dockerfile)
+
+-	[`18.4-postgres-tomcat`, `18.4.8-postgres-tomcat`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/18.4/postgres-tomcat/Dockerfile)
+
+-	[`18.4-mariadb-tomcat`, `18.4.8-mariadb-tomcat`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/18.4/mariadb-tomcat/Dockerfile)
+
+-	[`17`, `17.10`, `17.10.15`, `17-mysql-tomcat`, `17.10-mysql-tomcat`, `17.10.15-mysql-tomcat`, `lts-mysql-tomcat`, `lts-mysql`, `lts`](https://github.com/xwiki/xwiki-docker/blob/35bc01b3e196afafcee350f903f95e0908f04643/17/mysql-tomcat/Dockerfile)
+
+-	[`17-postgres-tomcat`, `17.10-postgres-tomcat`, `17.10.15-postgres-tomcat`, `lts-postgres-tomcat`, `lts-postgres`](https://github.com/xwiki/xwiki-docker/blob/35bc01b3e196afafcee350f903f95e0908f04643/17/postgres-tomcat/Dockerfile)
+
+-	[`17-mariadb-tomcat`, `17.10-mariadb-tomcat`, `17.10.15-mariadb-tomcat`, `lts-mariadb-tomcat`, `lts-mariadb`](https://github.com/xwiki/xwiki-docker/blob/35bc01b3e196afafcee350f903f95e0908f04643/17/mariadb-tomcat/Dockerfile)
+
+-	[`16`, `16.10`, `16.10.19`, `16-mysql-tomcat`, `16.10-mysql-tomcat`, `16.10.19-mysql-tomcat`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/16/mysql-tomcat/Dockerfile)
+
+-	[`16-postgres-tomcat`, `16.10-postgres-tomcat`, `16.10.19-postgres-tomcat`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/16/postgres-tomcat/Dockerfile)
+
+-	[`16-mariadb-tomcat`, `16.10-mariadb-tomcat`, `16.10.19-mariadb-tomcat`](https://github.com/xwiki/xwiki-docker/blob/58c5dc6ddb7fb4d948b98b33c218f21d0085dd16/16/mariadb-tomcat/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[the XWiki Docker JIRA project](http://jira.xwiki.org/browse/XDOCKER)
+	[the XWiki Docker JIRA project](https://jira.xwiki.org/browse/XDOCKER)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/xwiki/), [`arm64v8`](https://hub.docker.com/r/arm64v8/xwiki/)
@@ -55,23 +69,23 @@ WARNING:
 
 # What is XWiki
 
-[XWiki](http://xwiki.org) is a free wiki software platform written in Java with a design emphasis on extensibility. XWiki is an enterprise wiki. It includes WYSIWYG editing, OpenDocument based document import/export, semantic annotations and tagging, and advanced permissions management.
+[XWiki](https://xwiki.org) is a free wiki software platform written in Java with a design emphasis on extensibility. XWiki is an enterprise wiki. It includes WYSIWYG editing, OpenDocument based document import/export, semantic annotations and tagging, and advanced permissions management.
 
 As an application wiki, XWiki allows for the storing of structured data and the execution of server side script within the wiki interface. Scripting languages including Velocity, Groovy, Python, Ruby and PHP can be written directly into wiki pages using wiki macros. User-created data structures can be defined in wiki documents and instances of those structures can be attached to wiki documents, stored in a database, and queried using either Hibernate query language or XWiki's own query language.
 
-[XWiki.org's extension wiki](http://extensions.xwiki.org) is home to XWiki extensions ranging from [code snippets](http://snippets.xwiki.org) which can be pasted into wiki pages to loadable core modules. Many of XWiki Enterprise's features are provided by extensions which are bundled with it.
+[XWiki.org's extension wiki](https://extensions.xwiki.org) is home to XWiki extensions ranging from [code snippets](https://snippets.xwiki.org) which can be pasted into wiki pages to loadable core modules. Many of XWiki's features are provided by extensions which are bundled with it.
 
 ![logo](https://raw.githubusercontent.com/docker-library/docs/6fb07a8dacbad5cc548b87e4c267823a4aa98660/xwiki/logo.png)
 
 # Usage
 
-Please check the [documentation](https://github.com/xwiki-contrib/docker-xwiki/blob/master/README.md) to learn how to use the XWiki Docker images.
+Please check the [documentation](https://www.xwiki.org/xwiki/bin/view/documentation/xs/admin/installation/methods/install-xwiki-docker/) to learn how to use the XWiki Docker images.
 
 # License
 
-XWiki is licensed under the [LGPL 2.1](https://github.com/xwiki-contrib/docker-xwiki/blob/master/LICENSE).
+XWiki is licensed under the [LGPL 2.1](https://github.com/xwiki/xwiki-docker/blob/master/LICENSE).
 
-The Dockerfile repository is also licensed under the [LGPL 2.1](https://github.com/xwiki-contrib/docker-xwiki/blob/master/LICENSE).
+The Dockerfile repository is also licensed under the [LGPL 2.1](https://github.com/xwiki/xwiki-docker/blob/master/LICENSE).
 
 As with all Docker images, these likely also contain other software which may be under other licenses (such as Bash, etc from the base distribution, along with any direct or indirect dependencies of the primary software being contained).
 

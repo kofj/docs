@@ -20,22 +20,21 @@ WARNING:
 	[the Docker Community](https://github.com/31z4/zookeeper-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`3.5.9`, `3.5`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.5.9/Dockerfile)
--	[`3.6.3`, `3.6`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.6.3/Dockerfile)
--	[`3.7.1`, `3.7`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.7.1/Dockerfile)
--	[`3.8.0`, `3.8`, `latest`](https://github.com/31z4/zookeeper-docker/blob/5cf119d9c5d61024fdba66f7be707413513a8b0d/3.8.0/Dockerfile)
+-	[`3.8.8`, `3.8`, `3.8.8-jre-17`, `3.8-jre-17`](https://github.com/31z4/zookeeper-docker/blob/8b5c6485a961db956c6da7840028fc5faa355a41/3.8.8/Dockerfile)
+
+-	[`3.9.7`, `3.9`, `3.9.7-jre-17`, `3.9-jre-17`, `latest`](https://github.com/31z4/zookeeper-docker/blob/8b5c6485a961db956c6da7840028fc5faa355a41/3.9.7/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/31z4/zookeeper-docker/issues](https://github.com/31z4/zookeeper-docker/issues)
+	[https://github.com/31z4/zookeeper-docker/issues](https://github.com/31z4/zookeeper-docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/), [`arm64v8`](https://hub.docker.com/r/arm64v8/zookeeper/)
+	[`amd64`](https://hub.docker.com/r/amd64/zookeeper/), [`arm64v8`](https://hub.docker.com/r/arm64v8/zookeeper/), [`ppc64le`](https://hub.docker.com/r/ppc64le/zookeeper/), [`s390x`](https://hub.docker.com/r/s390x/zookeeper/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/zookeeper/` directory](https://github.com/docker-library/repo-info/blob/master/repos/zookeeper) ([history](https://github.com/docker-library/repo-info/commits/master/repos/zookeeper))  
@@ -78,13 +77,11 @@ $ docker run --name some-app --link some-zookeeper:zookeeper -d application-that
 $ docker run -it --rm --link some-zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
 ```
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `stack.yml` for `zookeeper`:
+Example `compose.yaml` for `zookeeper`:
 
 ```yaml
-version: '3.1'
-
 services:
   zoo1:
     image: zookeeper
@@ -117,9 +114,7 @@ services:
       ZOO_SERVERS: server.1=zoo1:2888:3888;2181 server.2=zoo2:2888:3888;2181 server.3=zoo3:2888:3888;2181
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/fb51d93e6bb1e8b773a728d297a45b834f04d3d1/zookeeper/stack.yml)
-
-This will start Zookeeper in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker stack deploy -c stack.yml zookeeper` (or `docker-compose -f stack.yml up`) and wait for it to initialize completely. Ports `2181-2183` will be exposed.
+This will start Zookeeper in [replicated mode](https://zookeeper.apache.org/doc/current/zookeeperStarted.html#sc_RunningReplicatedZooKeeper). Run `docker compose up` and wait for it to initialize completely. Ports `2181-2183` will be exposed.
 
 > Please be aware that setting up multiple servers on a single machine will not create any redundancy. If something were to happen which caused the machine to die, all of the zookeeper servers would be offline. Full redundancy requires that each server have its own machine. It must be a completely separate physical server. Multiple virtual machines on the same physical host are still vulnerable to the complete failure of that host.
 
@@ -241,15 +236,23 @@ This image is configured with volumes at `/data` and `/datalog` to hold the Zook
 
 ## How to configure logging
 
-By default, ZooKeeper redirects stdout/stderr outputs to the console. You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
+By default, ZooKeeper redirects stdout/stderr outputs to the console. Since 3.8 ZooKeeper is shipped with [LOGBack](https://logback.qos.ch/) as the logging backend. The ZooKeeper default `logback.xml` file resides in the `/conf` directory. To override default logging configuration mount your custom config as a volume:
+
+```console
+$ docker run --name some-zookeeper --restart always -d -v $(pwd)/logback.xml:/conf/logback.xml zookeeper
+```
+
+Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
+
+### Logging in 3.7
+
+You can redirect to a file located in `/logs` by passing environment variable `ZOO_LOG4J_PROP` as follows:
 
 ```console
 $ docker run --name some-zookeeper --restart always -e ZOO_LOG4J_PROP="INFO,ROLLINGFILE" zookeeper
 ```
 
-This will write logs to `/logs/zookeeper.log`. Check [ZooKeeper Logging](https://zookeeper.apache.org/doc/current/zookeeperAdmin.html#sc_logging) for more details.
-
-This image is configured with a volume at `/logs` for your convenience.
+This will write logs to `/logs/zookeeper.log`. This image is configured with a volume at `/logs` for your convenience.
 
 # License
 

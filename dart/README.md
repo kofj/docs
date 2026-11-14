@@ -20,20 +20,21 @@ WARNING:
 	The Dart Docker Team
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.17.6-sdk`, `2.17-sdk`, `2-sdk`, `stable-sdk`, `sdk`, `2.17.6`, `2.17`, `2`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/b73710e1fd5fa709206bcd5878cb9e213012d57a/stable/bullseye/Dockerfile)
--	[`2.18.0-271.4.beta-sdk`, `beta-sdk`, `2.18.0-271.4.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/b73710e1fd5fa709206bcd5878cb9e213012d57a/beta/bullseye/Dockerfile)
+-	[`3.14.0-sdk`, `3.14-sdk`, `3-sdk`, `stable-sdk`, `sdk`, `3.14.0`, `3.14`, `3`, `stable`, `latest`](https://github.com/dart-lang/dart-docker/blob/e8fb8445bb2682127292a486f25a45a21b0d0f35/stable/trixie/Dockerfile)
+
+-	[`3.15.0-118.1.beta-sdk`, `beta-sdk`, `3.15.0-118.1.beta`, `beta`](https://github.com/dart-lang/dart-docker/blob/e8fb8445bb2682127292a486f25a45a21b0d0f35/beta/trixie/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/dart-lang/dart-docker/issues](https://github.com/dart-lang/dart-docker/issues)
+	[https://github.com/dart-lang/dart-docker/issues](https://github.com/dart-lang/dart-docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/dart/), [`arm32v7`](https://hub.docker.com/r/arm32v7/dart/), [`arm64v8`](https://hub.docker.com/r/arm64v8/dart/)
+	[`amd64`](https://hub.docker.com/r/amd64/dart/), [`arm32v7`](https://hub.docker.com/r/arm32v7/dart/), [`arm64v8`](https://hub.docker.com/r/arm64v8/dart/), [`riscv64`](https://hub.docker.com/r/riscv64/dart/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/dart/` directory](https://github.com/docker-library/repo-info/blob/master/repos/dart) ([history](https://github.com/docker-library/repo-info/commits/master/repos/dart))  
@@ -48,13 +49,15 @@ WARNING:
 
 # What is Dart?
 
-Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks. For more details, see https://dart.dev.
+Dart is an approachable, portable, and productive language for high-quality apps on any platform.
+
+Its goal is to offer the most productive programming language for multi-platform development, paired with a flexible execution runtime platform for app frameworks, and support for full-stack development. For more details, see https://dart.dev.
 
 By utilizing Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe), you can create very small runtime images (~10 MB).
 
 ## Using this image
 
-We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-compile#exe). This enables creating small runtime images (~10 MB).
+We recommend using small runtime images that leverage Dart's support for ahead-of-time (AOT) [compilation to executables](https://dart.dev/tools/dart-build#build-a-cli-application). This enables creating small runtime images (~10 MB).
 
 ### Creating a Dart server app
 
@@ -90,7 +93,7 @@ The `Dockerfile` created by the `dart` tool performs two steps:
 2.	Assembles the runtime image by combining the compiled server with the Dart VM runtime and it's needed dependencies located in `/runtime/`.
 
 ```Dockerfile
-# Specify the Dart SDK base image version using dart:<version> (ex: dart:2.12)
+# Specify the Dart SDK base image version using dart:<version> (ex: dart:3.10)
 FROM dart:stable AS build
 
 # Resolve app dependencies.
@@ -102,13 +105,13 @@ RUN dart pub get
 COPY . .
 # Ensure packages are still up-to-date if anything has changed
 RUN dart pub get --offline
-RUN dart compile exe bin/server.dart -o bin/server
+RUN dart build cli --target bin/server.dart -o output
 
 # Build minimal serving image from AOT-compiled `/server` and required system
 # libraries and configuration files stored in `/runtime/` from the build stage.
 FROM scratch
 COPY --from=build /runtime/ /
-COPY --from=build /app/bin/server /app/bin/
+COPY --from=build /app/output/bundle/ /app/
 
 # Start server.
 EXPOSE 8080

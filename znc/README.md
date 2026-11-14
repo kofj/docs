@@ -20,17 +20,18 @@ WARNING:
 	[the ZNC Community](https://github.com/znc/znc-docker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.8.2`, `1.8`, `latest`](https://github.com/znc/znc-docker/blob/525355817a4d17a68e7d7ded3f5bc36f2e8b6da5/full/Dockerfile)
--	[`1.8.2-slim`, `1.8-slim`, `slim`](https://github.com/znc/znc-docker/blob/525355817a4d17a68e7d7ded3f5bc36f2e8b6da5/slim/Dockerfile)
+-	[`1.10.3`, `1.10`, `latest`](https://github.com/znc/znc-docker/blob/26f3980dcc0aba8ee5e9786fd1c08c16959aa6c6/full/Dockerfile)
+
+-	[`1.10.3-slim`, `1.10-slim`, `slim`](https://github.com/znc/znc-docker/blob/26f3980dcc0aba8ee5e9786fd1c08c16959aa6c6/slim/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/znc/znc-docker/issues](https://github.com/znc/znc-docker/issues)
+	[https://github.com/znc/znc-docker/issues](https://github.com/znc/znc-docker/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/znc/), [`arm32v6`](https://hub.docker.com/r/arm32v6/znc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/znc/)

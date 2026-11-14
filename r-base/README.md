@@ -20,11 +20,11 @@ WARNING:
 	[the Rocker Community](https://github.com/rocker-org/rocker)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.2.1`, `latest`](https://github.com/rocker-org/rocker/blob/dedd29461f0952fef9b432a58e2540ad58305a42/r-base/4.2.1/Dockerfile)
+-	[`4.6.2`, `latest`](https://github.com/rocker-org/rocker/blob/43028b68febaeda68c9c574f08824488405063d4/r-base/4.6.2/Dockerfile)
 
 # Quick reference (cont.)
 

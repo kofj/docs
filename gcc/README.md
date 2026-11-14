@@ -20,19 +20,24 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/gcc)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`12.1.0`, `12.1`, `12`, `latest`, `12.1.0-bullseye`, `12.1-bullseye`, `12-bullseye`, `bullseye`](https://github.com/docker-library/gcc/blob/a5a94a2d5c812fe57f6f28713b0f899b879145d3/12/Dockerfile)
--	[`11.3.0`, `11.3`, `11`, `11.3.0-bullseye`, `11.3-bullseye`, `11-bullseye`](https://github.com/docker-library/gcc/blob/a5a94a2d5c812fe57f6f28713b0f899b879145d3/11/Dockerfile)
--	[`10.4.0`, `10.4`, `10`, `10.4.0-buster`, `10.4-buster`, `10-buster`](https://github.com/docker-library/gcc/blob/1e3174f36d64a3ce1373a7004a7f0d4f98de307b/10/Dockerfile)
--	[`9.5.0`, `9.5`, `9`, `9.5.0-buster`, `9.5-buster`, `9-buster`](https://github.com/docker-library/gcc/blob/6c40a41a202b2996b26b52e94762fe9aa8830766/9/Dockerfile)
+-	[`16.2.0`, `16.2`, `16`, `latest`, `16.2.0-trixie`, `16.2-trixie`, `16-trixie`, `trixie`](https://github.com/docker-library/gcc/blob/5719f2f1af9000a4129748ce85656c7964b76c31/16/Dockerfile)
+
+-	[`15.3.0`, `15.3`, `15`, `15.3.0-trixie`, `15.3-trixie`, `15-trixie`](https://github.com/docker-library/gcc/blob/5719f2f1af9000a4129748ce85656c7964b76c31/15/Dockerfile)
+
+-	[`14.4.0`, `14.4`, `14`, `14.4.0-trixie`, `14.4-trixie`, `14-trixie`](https://github.com/docker-library/gcc/blob/5719f2f1af9000a4129748ce85656c7964b76c31/14/Dockerfile)
+
+-	[`13.5.0`, `13.5`, `13`, `13.5.0-bookworm`, `13.5-bookworm`, `13-bookworm`](https://github.com/docker-library/gcc/blob/cf5c03c266c89d12e1760b78b4914ad8b6c1e868/13/Dockerfile)
+
+-	[`12.5.0`, `12.5`, `12`, `12.5.0-bookworm`, `12.5-bookworm`, `12-bookworm`](https://github.com/docker-library/gcc/blob/5719f2f1af9000a4129748ce85656c7964b76c31/12/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues)
+	[https://github.com/docker-library/gcc/issues](https://github.com/docker-library/gcc/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/gcc/), [`arm32v5`](https://hub.docker.com/r/arm32v5/gcc/), [`arm32v7`](https://hub.docker.com/r/arm32v7/gcc/), [`arm64v8`](https://hub.docker.com/r/arm64v8/gcc/), [`ppc64le`](https://hub.docker.com/r/ppc64le/gcc/), [`s390x`](https://hub.docker.com/r/s390x/gcc/)

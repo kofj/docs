@@ -1,1 +1,1 @@
-An Open-Source, Cloud-Native, Distributed MQTT Message Broker for IoT.
+DEPRECATED; The most scalable open-source MQTT broker for IoT, IIoT, connected vehicles, and more.

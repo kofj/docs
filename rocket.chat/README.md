@@ -20,18 +20,24 @@ WARNING:
 	[Rocket.Chat](https://github.com/RocketChat/Docker.Official.Image)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.1`, `5.0`, `5`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/8d2ec523712c4acecf80db9658f582517293e47b/5.0/Dockerfile)
--	[`4.8.3`, `4.8`, `4`](https://github.com/RocketChat/Docker.Official.Image/blob/8d2ec523712c4acecf80db9658f582517293e47b/4.8/Dockerfile)
--	[`4.7.5`, `4.7`](https://github.com/RocketChat/Docker.Official.Image/blob/8d2ec523712c4acecf80db9658f582517293e47b/4.7/Dockerfile)
+-	[`8.9.1`, `8.9`, `latest`](https://github.com/RocketChat/Docker.Official.Image/blob/81d2a27dffb0af550a80bfd7fcd8d5c8298d44a6/8.9/Dockerfile)
+
+-	[`8.8.2`, `8.8`](https://github.com/RocketChat/Docker.Official.Image/blob/81d2a27dffb0af550a80bfd7fcd8d5c8298d44a6/8.8/Dockerfile)
+
+-	[`8.7.1`, `8.7`](https://github.com/RocketChat/Docker.Official.Image/blob/2ad8a4fc73ba9dceb1c18adf49f1510cf671e6aa/8.7/Dockerfile)
+
+-	[`8.6.4`, `8.6`](https://github.com/RocketChat/Docker.Official.Image/blob/81d2a27dffb0af550a80bfd7fcd8d5c8298d44a6/8.6/Dockerfile)
+
+-	[`8.5.5`, `8.5`](https://github.com/RocketChat/Docker.Official.Image/blob/81d2a27dffb0af550a80bfd7fcd8d5c8298d44a6/8.5/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues)
+	[https://github.com/RocketChat/Docker.Official.Image/issues](https://github.com/RocketChat/Docker.Official.Image/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/rocket.chat/)

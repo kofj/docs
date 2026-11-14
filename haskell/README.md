@@ -20,21 +20,38 @@ WARNING:
 	[the Docker Community](https://github.com/haskell/docker-haskell)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.2.4-buster`, `9.2-buster`, `9-buster`, `buster`, `9.2.4`, `9.2`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/90dbf04d35f52704c46f3ebc08e8eeef6e9b026b/9.2/buster/Dockerfile)
--	[`9.2.4-slim-buster`, `9.2-slim-buster`, `9-slim-buster`, `slim-buster`, `9.2.4-slim`, `9.2-slim`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/90dbf04d35f52704c46f3ebc08e8eeef6e9b026b/9.2/slim-buster/Dockerfile)
--	[`9.0.2-buster`, `9.0-buster`, `9.0.2`, `9.0`](https://github.com/haskell/docker-haskell/blob/573ee754783f8d5c5674888768378c6832f8d121/9.0/buster/Dockerfile)
--	[`9.0.2-slim-buster`, `9.0-slim-buster`, `9.0.2-slim`, `9.0-slim`](https://github.com/haskell/docker-haskell/blob/573ee754783f8d5c5674888768378c6832f8d121/9.0/slim-buster/Dockerfile)
--	[`8.10.7-buster`, `8.10-buster`, `8-buster`, `8.10.7`, `8.10`, `8`](https://github.com/haskell/docker-haskell/blob/595046aa00340b831927be7edb2f4eaa1a83e4e1/8.10/buster/Dockerfile)
--	[`8.10.7-slim-buster`, `8.10-slim-buster`, `8-slim-buster`, `8.10.7-slim`, `8.10-slim`, `8-slim`](https://github.com/haskell/docker-haskell/blob/573ee754783f8d5c5674888768378c6832f8d121/8.10/slim-buster/Dockerfile)
+-	[`9.14.1-bookworm`, `9.14-bookworm`, `9-bookworm`, `bookworm`, `9.14.1`, `9.14`, `9`, `latest`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.14/bookworm/Dockerfile)
+
+-	[`9.14.1-slim-bookworm`, `9.14-slim-bookworm`, `9-slim-bookworm`, `slim-bookworm`, `9-slim`, `slim`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.14/slim-bookworm/Dockerfile)
+
+-	[`9.12.4-bookworm`, `9.12-bookworm`, `9.12.4`, `9.12`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.12/bookworm/Dockerfile)
+
+-	[`9.12.4-slim-bookworm`, `9.12-slim-bookworm`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.12/slim-bookworm/Dockerfile)
+
+-	[`9.10.3-bookworm`, `9.10-bookworm`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.10/bookworm/Dockerfile)
+
+-	[`9.10.3-slim-bookworm`, `9.10-slim-bookworm`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.10/slim-bookworm/Dockerfile)
+
+-	[`9.10.3-bullseye`, `9.10-bullseye`, `9-bullseye`, `bullseye`, `9.10.3`, `9.10`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.10/bullseye/Dockerfile)
+
+-	[`9.10.3-slim-bullseye`, `9.10-slim-bullseye`, `9-slim-bullseye`, `slim-bullseye`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.10/slim-bullseye/Dockerfile)
+
+-	[`9.8.4-bullseye`, `9.8-bullseye`, `9.8.4`, `9.8`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.8/bullseye/Dockerfile)
+
+-	[`9.8.4-slim-bullseye`, `9.8-slim-bullseye`, `9.8.4-slim`, `9.8-slim`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.8/slim-bullseye/Dockerfile)
+
+-	[`9.6.7-bullseye`, `9.6-bullseye`, `9.6.7`, `9.6`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.6/bullseye/Dockerfile)
+
+-	[`9.6.7-slim-bullseye`, `9.6-slim-bullseye`, `9.6.7-slim`, `9.6-slim`](https://github.com/haskell/docker-haskell/blob/870b06856b1f4dfc09cd710ab9c680060d25e202/9.6/slim-bullseye/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/haskell/docker-haskell/issues](https://github.com/haskell/docker-haskell/issues)
+	[https://github.com/haskell/docker-haskell/issues](https://github.com/haskell/docker-haskell/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/haskell/), [`arm64v8`](https://hub.docker.com/r/arm64v8/haskell/)
@@ -166,9 +183,7 @@ The `haskell` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like buster in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
+Some of these tags may have names like bookworm in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `haskell:<version>-slim`
 

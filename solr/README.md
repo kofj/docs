@@ -24,9 +24,21 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`9.0.0`, `9.0`, `9`, `latest`](https://github.com/apache/solr-docker/blob/4a13023efd746e0a8ea11a7de7427dc967e89000/9.0/Dockerfile)
--	[`8.11.2`, `8.11`, `8`](https://github.com/docker-solr/docker-solr/blob/970bb718583d14f6f1300f6fd261f01ddcf757c8/8.11/Dockerfile)
--	[`8.11.2-slim`, `8.11-slim`, `8-slim`](https://github.com/docker-solr/docker-solr/blob/970bb718583d14f6f1300f6fd261f01ddcf757c8/8.11/slim/Dockerfile)
+-	[`10.1.0`, `10.1`, `10`, `latest`](https://github.com/apache/solr-docker/blob/54546d2126d4cfea7d7b6698cb86b12776cc043a/10.1/Dockerfile)
+
+-	[`10.1.0-slim`, `10.1-slim`, `10-slim`, `slim`](https://github.com/apache/solr-docker/blob/54546d2126d4cfea7d7b6698cb86b12776cc043a/10.1-slim/Dockerfile)
+
+-	[`10.0.0`, `10.0`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0/Dockerfile)
+
+-	[`10.0.0-slim`, `10.0-slim`](https://github.com/apache/solr-docker/blob/884b2e6692174ea09cdb5183b8dd585760b5e9fb/10.0-slim/Dockerfile)
+
+-	[`9.11.0`, `9.11`, `9`](https://github.com/apache/solr-docker/blob/13c8b3c91d1b67db15b2addea387803d5eb2b246/9.11/Dockerfile)
+
+-	[`9.11.0-slim`, `9.11-slim`, `9-slim`](https://github.com/apache/solr-docker/blob/13c8b3c91d1b67db15b2addea387803d5eb2b246/9.11-slim/Dockerfile)
+
+-	[`9.10.1`, `9.10`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10/Dockerfile)
+
+-	[`9.10.1-slim`, `9.10-slim`](https://github.com/apache/solr-docker/blob/9c4aa799df40c506a48bc487cc6b4aaed24f9149/9.10-slim/Dockerfile)
 
 # Quick reference (cont.)
 
@@ -34,7 +46,7 @@ WARNING:
 	[The Solr Users mailing list](https://solr.apache.org/community.html#mailing-lists-chat)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm32v7`](https://hub.docker.com/r/arm32v7/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
+	[`amd64`](https://hub.docker.com/r/amd64/solr/), [`arm64v8`](https://hub.docker.com/r/arm64v8/solr/), [`ppc64le`](https://hub.docker.com/r/ppc64le/solr/), [`riscv64`](https://hub.docker.com/r/riscv64/solr/), [`s390x`](https://hub.docker.com/r/s390x/solr/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/solr/` directory](https://github.com/docker-library/repo-info/blob/master/repos/solr) ([history](https://github.com/docker-library/repo-info/commits/master/repos/solr))  
@@ -49,7 +61,7 @@ WARNING:
 
 # What is Solr?
 
-Solr is the popular, blazing fast, open source NoSQL search platform from the Apache Lucene project. Its major features include powerful full-text search, hit highlighting, faceted search, dynamic clustering, database integration, rich document handling, and geospatial search. Solr is highly scalable, providing fault tolerant distributed search and indexing, and powers the search and navigation features of many of the world's largest internet sites.
+Solr is the blazing-fast, open source, multi-modal search platform built on Apache Lucene. It powers full-text, vector, analytics, and geospatial search at many of the world's largest organizations. Other major features include Kubernetes integration, streaming, highlighting, faceting, and spellchecking.
 
 Learn more on [Apache Solr homepage](http://solr.apache.org/) and in the [Apache Solr Reference Guide](https://solr.apache.org/guide/).
 
@@ -76,16 +88,6 @@ Please direct any usage questions to the [Solr users mailing list](https://solr.
 # History
 
 This project was started in 2015 by [Martijn Koster](https://github.com/makuk66) in the [github.com/docker-solr/docker-solr](https://github.com/docker-solr/docker-solr) repository. In 2019, the maintainership and copyright was transferred to the Apache Solr project. Many thanks to Martijn for all your contributions over the years!
-
-# NOTE: Not vulnerable to Log4J 2 "Log4shell"
-
-Some Docker images *were* vulnerable to one of a pair of vulnerabilities in Log4J 2. But we have mitigated *[supported](https://hub.docker.com/_/solr?tab=tags)* images (and some others) and re-published them. You may need to re-pull the image you are using. For those images prior to 8.11.1, Solr is using a popular technique to mitigate the problem -- setting `log4j2.formatMsgNoLookups`. The Solr maintainers have deemed this adequate based specifically on how Solr uses logging; it won't be adequate for all projects that use Log4J. Scanning software might alert you to the presence of an older Log4J JAR file, however it can't know if your software (Solr) uses the artifacts in a vulnerable way. To validate the mitigation being in place, look for `-Dlog4j2.formatMsgNoLookups` in the Args section of Solr's front admin screen. As of Solr 8.11.1, Solr is using Log4J 2.16.0.
-
-References:
-
--	[CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228): Solr *was* vulnerable to this.
--	[CVE-2021-45046](https://nvd.nist.gov/vuln/detail/CVE-2021-45046): Solr *never was* vulnerable to this.
--	[Solr security bulletin](https://solr.apache.org/security.html#apache-solr-affected-by-apache-log4j-cve-2021-44228)
 
 # Image Variants
 

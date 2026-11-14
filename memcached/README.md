@@ -20,20 +20,21 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/memcached)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`1.6.16`, `1.6`, `1`, `latest`, `1.6.16-bullseye`, `1.6-bullseye`, `1-bullseye`, `bullseye`](https://github.com/docker-library/memcached/blob/1f2afc73fbae68b30d0d0455decf60b1675af513/debian/Dockerfile)
--	[`1.6.16-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.16-alpine3.16`, `1.6-alpine3.16`, `1-alpine3.16`, `alpine3.16`](https://github.com/docker-library/memcached/blob/1f2afc73fbae68b30d0d0455decf60b1675af513/alpine/Dockerfile)
+-	[`1.6.45`, `1.6`, `1`, `latest`, `1.6.45-trixie`, `1.6-trixie`, `1-trixie`, `trixie`](https://github.com/docker-library/memcached/blob/53ac0ecb0bf88b471a0110f8996ce791baf1a667/1/debian/Dockerfile)
+
+-	[`1.6.45-alpine`, `1.6-alpine`, `1-alpine`, `alpine`, `1.6.45-alpine3.24`, `1.6-alpine3.24`, `1-alpine3.24`, `alpine3.24`](https://github.com/docker-library/memcached/blob/53ac0ecb0bf88b471a0110f8996ce791baf1a667/1/alpine/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues)
+	[https://github.com/docker-library/memcached/issues](https://github.com/docker-library/memcached/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`mips64le`](https://hub.docker.com/r/mips64le/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
+	[`amd64`](https://hub.docker.com/r/amd64/memcached/), [`arm32v5`](https://hub.docker.com/r/arm32v5/memcached/), [`arm32v6`](https://hub.docker.com/r/arm32v6/memcached/), [`arm32v7`](https://hub.docker.com/r/arm32v7/memcached/), [`arm64v8`](https://hub.docker.com/r/arm64v8/memcached/), [`i386`](https://hub.docker.com/r/i386/memcached/), [`ppc64le`](https://hub.docker.com/r/ppc64le/memcached/), [`riscv64`](https://hub.docker.com/r/riscv64/memcached/), [`s390x`](https://hub.docker.com/r/s390x/memcached/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/memcached/` directory](https://github.com/docker-library/repo-info/blob/master/repos/memcached) ([history](https://github.com/docker-library/repo-info/commits/master/repos/memcached))  
@@ -60,13 +61,31 @@ Memcached's APIs provide a very large hash table distributed across multiple mac
 $ docker run --name my-memcache -d memcached
 ```
 
-## Setting Memory Usage
+### Configuration
+
+To customize the configuration of the memcached server, first obtain the upstream configuration options from the container:
 
 ```console
-$ docker run --name my-memcache -d memcached memcached -m 64
+$ docker run --rm memcached -h
 ```
 
-This would set the Memcached server to use 64 megabytes for storage.
+Using `docker run`:
+
+```console
+$ docker run --name my-memcache -d memcached memcached --memory-limit=64
+```
+
+or using Docker Compose:
+
+```yaml
+services:
+  memcached:
+    image: memcached
+    command:
+      - --conn-limit=1024
+      - --memory-limit=64
+      - --threads=4
+```
 
 For infomation on configuring your memcached server, see the extensive [wiki](https://github.com/memcached/memcached/wiki).
 
@@ -78,7 +97,7 @@ The `memcached` images come in many flavors, each designed for a specific use ca
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `memcached:<version>-alpine`
 

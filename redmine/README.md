@@ -20,23 +20,41 @@ WARNING:
 	[the Docker Community](https://github.com/docker-library/redmine)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`5.0.2`, `5.0`, `5`, `latest`, `5.0.2-bullseye`, `5.0-bullseye`, `5-bullseye`, `bullseye`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/5.0/Dockerfile)
--	[`5.0.2-alpine`, `5.0-alpine`, `5-alpine`, `alpine`, `5.0.2-alpine3.15`, `5.0-alpine3.15`, `5-alpine3.15`, `alpine3.15`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/5.0/alpine/Dockerfile)
--	[`4.2.7`, `4.2`, `4`, `4.2.7-bullseye`, `4.2-bullseye`, `4-bullseye`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/4.2/Dockerfile)
--	[`4.2.7-passenger`, `4.2-passenger`, `4-passenger`](https://github.com/docker-library/redmine/blob/845d96d1c60242c9c4871c9be1da2835ca5d1ca2/4.2/passenger/Dockerfile)
--	[`4.2.7-alpine`, `4.2-alpine`, `4-alpine`, `4.2.7-alpine3.15`, `4.2-alpine3.15`, `4-alpine3.15`](https://github.com/docker-library/redmine/blob/4090622d755212fc475a8f7152ff9dfffcd7d131/4.2/alpine/Dockerfile)
+-	[`7.0.3`, `7.0`, `7`, `latest`, `7.0.3-trixie`, `7.0-trixie`, `7-trixie`, `trixie`](https://github.com/docker-library/redmine/blob/49a27f29f1d214a4226af75b55578e36d3474c4c/7.0/trixie/Dockerfile)
+
+-	[`7.0.3-bookworm`, `7.0-bookworm`, `7-bookworm`, `bookworm`](https://github.com/docker-library/redmine/blob/49a27f29f1d214a4226af75b55578e36d3474c4c/7.0/bookworm/Dockerfile)
+
+-	[`7.0.3-alpine3.24`, `7.0-alpine3.24`, `7-alpine3.24`, `alpine3.24`, `7.0.3-alpine`, `7.0-alpine`, `7-alpine`, `alpine`](https://github.com/docker-library/redmine/blob/49a27f29f1d214a4226af75b55578e36d3474c4c/7.0/alpine3.24/Dockerfile)
+
+-	[`7.0.3-alpine3.23`, `7.0-alpine3.23`, `7-alpine3.23`, `alpine3.23`](https://github.com/docker-library/redmine/blob/49a27f29f1d214a4226af75b55578e36d3474c4c/7.0/alpine3.23/Dockerfile)
+
+-	[`6.1.6`, `6.1`, `6`, `6.1.6-trixie`, `6.1-trixie`, `6-trixie`](https://github.com/docker-library/redmine/blob/2629db055bd4efe7c2ded28bac1e8b0f35aacfbc/6.1/trixie/Dockerfile)
+
+-	[`6.1.6-bookworm`, `6.1-bookworm`, `6-bookworm`](https://github.com/docker-library/redmine/blob/2629db055bd4efe7c2ded28bac1e8b0f35aacfbc/6.1/bookworm/Dockerfile)
+
+-	[`6.1.6-alpine3.24`, `6.1-alpine3.24`, `6-alpine3.24`, `6.1.6-alpine`, `6.1-alpine`, `6-alpine`](https://github.com/docker-library/redmine/blob/2629db055bd4efe7c2ded28bac1e8b0f35aacfbc/6.1/alpine3.24/Dockerfile)
+
+-	[`6.1.6-alpine3.23`, `6.1-alpine3.23`, `6-alpine3.23`](https://github.com/docker-library/redmine/blob/2629db055bd4efe7c2ded28bac1e8b0f35aacfbc/6.1/alpine3.23/Dockerfile)
+
+-	[`6.0.12`, `6.0`, `6.0.12-trixie`, `6.0-trixie`](https://github.com/docker-library/redmine/blob/ec4c2901fc12059c6c488553f07335110bc87d78/6.0/trixie/Dockerfile)
+
+-	[`6.0.12-bookworm`, `6.0-bookworm`](https://github.com/docker-library/redmine/blob/ec4c2901fc12059c6c488553f07335110bc87d78/6.0/bookworm/Dockerfile)
+
+-	[`6.0.12-alpine3.24`, `6.0-alpine3.24`, `6.0.12-alpine`, `6.0-alpine`](https://github.com/docker-library/redmine/blob/ec4c2901fc12059c6c488553f07335110bc87d78/6.0/alpine3.24/Dockerfile)
+
+-	[`6.0.12-alpine3.23`, `6.0-alpine3.23`](https://github.com/docker-library/redmine/blob/ec4c2901fc12059c6c488553f07335110bc87d78/6.0/alpine3.23/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/docker-library/redmine/issues](https://github.com/docker-library/redmine/issues)
+	[https://github.com/docker-library/redmine/issues](https://github.com/docker-library/redmine/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
-	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
+	[`amd64`](https://hub.docker.com/r/amd64/redmine/), [`arm32v5`](https://hub.docker.com/r/arm32v5/redmine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/redmine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/redmine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/redmine/), [`i386`](https://hub.docker.com/r/i386/redmine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/redmine/), [`riscv64`](https://hub.docker.com/r/riscv64/redmine/), [`s390x`](https://hub.docker.com/r/s390x/redmine/)
 
 -	**Published image artifact details**:  
 	[repo-info repo's `repos/redmine/` directory](https://github.com/docker-library/repo-info/blob/master/repos/redmine) ([history](https://github.com/docker-library/repo-info/commits/master/repos/redmine))  
@@ -93,13 +111,11 @@ Running Redmine with a database server is the recommended way.
 	$ docker run -d --name some-redmine --network some-network -e REDMINE_DB_POSTGRES=some-postgres -e REDMINE_DB_USERNAME=redmine -e REDMINE_DB_PASSWORD=secret redmine
 	```
 
-## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
+## ... via [`docker compose`](https://github.com/docker/compose)
 
-Example `stack.yml` for `redmine`:
+Example `compose.yaml` for `redmine`:
 
 ```yaml
-version: '3.1'
-
 services:
 
   redmine:
@@ -113,20 +129,14 @@ services:
       REDMINE_SECRET_KEY_BASE: supersecretkey
 
   db:
-    image: mysql:5.7
+    image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_DATABASE: redmine
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/cd78c2e058c5a648c0ef42590943736612332666/redmine/stack.yml)
-
-Run `docker stack deploy -c stack.yml redmine` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:8080`, `http://localhost:8080`, or `http://host-ip:8080` (as appropriate).
-
-## Alternative Web Server
-
-The other tags in this repository, like those with `passenger`, use the same environment and `--links` as the default tags that use WEBrick (`rails s`) but instead give you the option of a different web and application server. `passenger` uses [Phusion Passenger](https://www.phusionpassenger.com/). [`tini`](https://github.com/krallin/tini) is used for reaping [zombies](https://en.wikipedia.org/wiki/Zombie_process).
+Run `docker compose up`, wait for it to initialize completely, and visit `http://localhost:8080` or `http://host-ip:8080` (as appropriate).
 
 ## Accessing the Application
 
@@ -136,8 +146,8 @@ Currently, the default user and password from upstream is admin/admin ([logging 
 
 Important note: There are several ways to store data used by applications that run in Docker containers. We encourage users of the `redmine` images to familiarize themselves with the options available, including:
 
--	Let Docker manage the storage of your files [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/engine/tutorials/dockervolumes/#adding-a-data-volume). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
--	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/engine/tutorials/dockervolumes/#mount-a-host-directory-as-a-data-volume). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
+-	Let Docker manage the storage of your files [by writing the files to disk on the host system using its own internal volume management](https://docs.docker.com/storage/volumes/). This is the default and is easy and fairly transparent to the user. The downside is that the files may be hard to locate for tools and applications that run directly on the host system, i.e. outside containers.
+-	Create a data directory on the host system (outside the container) and [mount this to a directory visible from inside the container](https://docs.docker.com/storage/bind-mounts/). This places the database files in a known location on the host system, and makes it easy for tools and applications on the host system to access the files. The downside is that the user needs to make sure that the directory exists, and that e.g. directory permissions and other security mechanisms on the host system are set up correctly.
 
 The Docker documentation is a good starting point for understanding the different storage options and variations, and there are multiple blogs and forum postings that discuss and give advice in this area. We will simply show the basic procedure here for the latter option above:
 
@@ -194,25 +204,15 @@ This variable allows you to control if `rake redmine:plugins:migrate` is run on 
 
 `redmine:plugins:migrate` will not run if you start your image with something other than the default `CMD`, like `bash`. See the current `docker-entrypoint.sh` in your image for details.
 
-### `REDMINE_SECRET_KEY_BASE`
+### `SECRET_KEY_BASE`
 
-This variable is required when using Docker Swarm replicas to maintain session connections when being loadbalanced between containers. It will create an initial `config/secrets.yml` and set the `secret_key_base` value, which is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable or provide a `secrets.yml` one will be generated using `rake generate_secret_token`.
+This is a general Rails environment variable. This variable is useful when using loadbalanced replicas to maintain session connections. It is "used by Rails to encode cookies storing session data thus preventing their tampering. Generating a new secret token invalidates all existing sessions after restart" ([session store](https://www.redmine.org/projects/redmine/wiki/RedmineInstall#Step-5-Session-store-secret-generation)). If you do not set this variable, then the `secret_key_base` value will be generated using `rake generate_secret_token`.
+
+For backwards compatibility, the deprecated, Docker-specific `REDMINE_SECRET_KEY_BASE` variable will automatically fill the `SECRET_KEY_BASE` environment variable. Users should migrate their deployments to use the `SECRET_KEY_BASE` variable directly.
 
 ## Running as an arbitrary user
 
-For running Redmine without Phusion Passenger you can simply use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container
-
-For running the `redmine:passenger` variant as an arbitrary user you will however need the user to exist in `/etc/passwd`. Here are a few examples for doing that:
-
-1.	Create the user on your host and mount `/etc/passwd:/etc/passwd:ro`
-
-2.	Create a Dockerfile `FROM redmine:passenger` and include something like [`RUN groupadd -r group && useradd --no-log-init -r -g group user`](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#user)
-
-	```dockerfile
-	FROM redmine:passenger
-	RUN groupadd -r group && useradd --no-log-init -r -g group user
-	USER user
-	```
+You can use the [`--user`](https://docs.docker.com/engine/reference/run/#user) flag to `docker run` and give it a `username:group` or `UID:GID`, the user doesn't need to exist in the container.
 
 ## Docker Secrets
 
@@ -232,7 +232,7 @@ The `redmine` images come in many flavors, each designed for a specific use case
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-Some of these tags may have names like bullseye in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
+Some of these tags may have names like bookworm or trixie in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
 
 ## `redmine:<version>-alpine`
 

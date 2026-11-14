@@ -20,20 +20,24 @@ WARNING:
 	[Natanael Copa](https://github.com/alpinelinux/docker-alpine) (an Alpine Linux maintainer)
 
 -	**Where to get help**:  
-	[the Docker Community Forums](https://forums.docker.com/), [the Docker Community Slack](https://dockr.ly/slack), or [Stack Overflow](https://stackoverflow.com/search?tab=newest&q=docker)
+	[the Docker Community Slack](https://dockr.ly/comm-slack), [Server Fault](https://serverfault.com/help/on-topic), [Unix & Linux](https://unix.stackexchange.com/help/on-topic), or [Stack Overflow](https://stackoverflow.com/help/on-topic)
 
 # Supported tags and respective `Dockerfile` links
 
--	[`20220715`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/7593add9a3b59c2ee114e60bd2b2a27dc955cbfb/x86_64/Dockerfile)
--	[`3.16.2`, `3.16`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/adebcfd075c83ef788b5f071678dcfb8ea118bb3/x86_64/Dockerfile)
--	[`3.15.6`, `3.15`](https://github.com/alpinelinux/docker-alpine/blob/a9e802051a3a2ae7d6fdd32ff6f5b39e62240089/x86_64/Dockerfile)
--	[`3.14.8`, `3.14`](https://github.com/alpinelinux/docker-alpine/blob/a6c74aa475f4bc471e72f527db6256d8c3a52434/x86_64/Dockerfile)
--	[`3.13.12`, `3.13`](https://github.com/alpinelinux/docker-alpine/blob/4e7658cebff5e569496deea3556a6e258df12a65/x86_64/Dockerfile)
+-	[`20260805`, `edge`](https://github.com/alpinelinux/docker-alpine/blob/410e6fcf56b6bfd6e6b3acf0ab59a5ad1381ca54/x86_64/Dockerfile)
+
+-	[`3.24.4`, `3.24`, `3`, `latest`](https://github.com/alpinelinux/docker-alpine/blob/0c9af76133a2dd9a31dedf3600e423087b29a879/x86_64/Dockerfile)
+
+-	[`3.23.8`, `3.23`](https://github.com/alpinelinux/docker-alpine/blob/25ff554b9ad20357b815a70e212f43b5d366e8db/x86_64/Dockerfile)
+
+-	[`3.22.8`, `3.22`](https://github.com/alpinelinux/docker-alpine/blob/4e376baa03cfee6fbebd5ca593e980899807e975/x86_64/Dockerfile)
+
+-	[`3.21.10`, `3.21`](https://github.com/alpinelinux/docker-alpine/blob/db8785d223475e7f494be032c44f2342e21496d3/x86_64/Dockerfile)
 
 # Quick reference (cont.)
 
 -	**Where to file issues**:  
-	[https://github.com/alpinelinux/docker-alpine/issues](https://github.com/alpinelinux/docker-alpine/issues)
+	[https://github.com/alpinelinux/docker-alpine/issues](https://github.com/alpinelinux/docker-alpine/issues?q=is:issue+is:pr)
 
 -	**Supported architectures**: ([more info](https://github.com/docker-library/official-images#architectures-other-than-amd64))  
 	[`amd64`](https://hub.docker.com/r/amd64/alpine/), [`arm32v6`](https://hub.docker.com/r/arm32v6/alpine/), [`arm32v7`](https://hub.docker.com/r/arm32v7/alpine/), [`arm64v8`](https://hub.docker.com/r/arm64v8/alpine/), [`i386`](https://hub.docker.com/r/i386/alpine/), [`ppc64le`](https://hub.docker.com/r/ppc64le/alpine/), [`riscv64`](https://hub.docker.com/r/riscv64/alpine/), [`s390x`](https://hub.docker.com/r/s390x/alpine/)
